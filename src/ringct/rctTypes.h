@@ -130,7 +130,7 @@ namespace rct {
         BEGIN_SERIALIZE_OBJECT()
           FIELD(mask) // not saved from v2 BPs
           FIELD(amount)
-          // FIELD(senderPk) // not serialized, as we do not use it in monero currently
+          // FIELD(senderPk) // not serialized, as we do not use it in franc currently
         END_SERIALIZE()
     };
 

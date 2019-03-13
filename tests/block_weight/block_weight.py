@@ -1,5 +1,5 @@
 #!/usr/bin/python
-# Simulate a maximal block attack on the Monero network
+# Simulate a maximal block attack on the Franc network
 # This uses the scheme proposed by ArticMine
 # Written by Sarang Nother
 # Copyright (c) 2019 The Monero Project
