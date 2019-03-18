@@ -923,15 +923,15 @@ namespace cryptonote
     switch (decimal_point)
     {
       case 12:
-        return "monero";
+        return "franc";
       case 9:
-        return "millinero";
+        return "millifranc";
       case 6:
-        return "micronero";
+        return "microfranc";
       case 3:
-        return "nanonero";
+        return "nanofranc";
       case 0:
-        return "piconero";
+        return "picofranc";
       default:
         ASSERT_MES_AND_THROW("Invalid decimal point specification: " << decimal_point);
     }

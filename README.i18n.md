@@ -1,14 +1,3 @@
-Monero daemon internationalization
-==================================
-
-The Monero command line tools can be translated in various languages. If you wish to contribute and need help/support, contact the [Monero Localization Workgroup on Taiga](https://taiga.getmonero.org/project/erciccione-monero-localization/) or come chat on `#monero-translations` (Freenode/IRC, riot/matrix, MatterMost)
-
-In order to use the same translation workflow as the [Monero Core GUI](https://github.com/monero-project/monero-gui), they use Qt Linguist translation files.  However, to avoid the dependencies on Qt this normally implies, they use a custom loader to read those files at runtime.
-
-### Tools for translators
-
-In order to create, update or build translations files, you need to have Qt tools installed. For translating, you need either the **Qt Linguist GUI** ([part of Qt Creator](https://www.qt.io/download) or a [3rd-party standalone version](https://github.com/lelegard/qtlinguist-installers/releases)), or another tool that supports Qt ts files, such as Transifex.  The files are XML, so they can be edited in any plain text editor if needed.
-
 ### Creating / modifying translations
 
 You do not need anything from Qt in order to use the final translations.
@@ -31,7 +20,7 @@ To build translations after modifying them:
 
 To test a translation:
 
-    LANG=es ./build/release/bin/monero-wallet-cli
+    LANG=es ./build/release/bin/franc-wallet-cli
 
 To add new translatable strings in the source code:
 
