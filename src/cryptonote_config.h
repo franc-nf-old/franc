@@ -50,9 +50,9 @@
 #define BLOCKCHAIN_TIMESTAMP_CHECK_WINDOW               60
 
 // MONEY_SUPPLY - total number coins to be generated
-#define MONEY_SUPPLY                                    (20700000000000000000)//((uint64_t)(-1)) 207 milliards de francs en circulation(dec 2001)
+#define MONEY_SUPPLY                                    (2070000000000000000)//((uint64_t)(-1)) 207 milliards de francs en circulation(dec 2001)
 #define EMISSION_SPEED_FACTOR_PER_MINUTE                (20)
-#define FINAL_SUBSIDY_PER_MINUTE                        ((uint64_t)30000000) // 3 * pow(10, 7)
+#define FINAL_SUBSIDY_PER_MINUTE                        ((uint64_t)3000000) // 3 * pow(10, 6)
 
 #define CRYPTONOTE_REWARD_BLOCKS_WINDOW                 100
 #define CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V2    60000 //size of block (bytes) after which reward for block calculated using block size
@@ -61,17 +61,17 @@
 #define CRYPTONOTE_LONG_TERM_BLOCK_WEIGHT_WINDOW_SIZE   100000 // size in blocks of the long term block weight median window
 #define CRYPTONOTE_SHORT_TERM_BLOCK_WEIGHT_SURGE_FACTOR 50
 #define CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE          600
-#define CRYPTONOTE_DISPLAY_DECIMAL_POINT                8
+#define CRYPTONOTE_DISPLAY_DECIMAL_POINT                7
 // COIN - number of smallest units in one coin
-#define COIN                                            ((uint64_t)100000000) // pow(10, 8)
+#define COIN                                            ((uint64_t)10000000) // pow(10, 7)
 
-#define FEE_PER_KB_OLD                                  ((uint64_t)1000000) // pow(10, 6)
-#define FEE_PER_KB                                      ((uint64_t)200000) // 2 * pow(10, 5)
-#define FEE_PER_BYTE                                    ((uint64_t)30)
-#define DYNAMIC_FEE_PER_KB_BASE_FEE                     ((uint64_t)200000) // 2 * pow(10,5)
-#define DYNAMIC_FEE_PER_KB_BASE_BLOCK_REWARD            ((uint64_t)1000000000) // 10 * pow(10,8)
-#define DYNAMIC_FEE_PER_KB_BASE_FEE_V5                  ((uint64_t)200000 * (uint64_t)CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V2 / CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V5)
-#define DYNAMIC_FEE_REFERENCE_TRANSACTION_WEIGHT         ((uint64_t)3)//3000
+#define FEE_PER_KB_OLD                                  ((uint64_t)100000) // pow(10, 5)
+#define FEE_PER_KB                                      ((uint64_t)20000) // 2 * pow(10, 4)
+#define FEE_PER_BYTE                                    ((uint64_t)3)
+#define DYNAMIC_FEE_PER_KB_BASE_FEE                     ((uint64_t)20000) // 2 * pow(10,4)
+#define DYNAMIC_FEE_PER_KB_BASE_BLOCK_REWARD            ((uint64_t)100000000) // 10 * pow(10,7)
+#define DYNAMIC_FEE_PER_KB_BASE_FEE_V5                  ((uint64_t)20000 * (uint64_t)CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V2 / CRYPTONOTE_BLOCK_GRANTED_FULL_REWARD_ZONE_V5)
+#define DYNAMIC_FEE_REFERENCE_TRANSACTION_WEIGHT         ((uint64_t)3000)
 
 #define ORPHANED_BLOCKS_MAX_COUNT                       100
 
@@ -156,8 +156,8 @@ namespace config
 {
   uint64_t const DEFAULT_FEE_ATOMIC_XMR_PER_KB = 500; // Just a placeholder!  Change me!
   uint8_t const FEE_CALCULATION_MAX_RETRIES = 10;
-  uint64_t const DEFAULT_DUST_THRESHOLD = ((uint64_t)200000); // 2 * pow(10, 5)
-  uint64_t const BASE_REWARD_CLAMP_THRESHOLD = ((uint64_t)10000); // pow(10, 4)
+  uint64_t const DEFAULT_DUST_THRESHOLD = ((uint64_t)20000); // 2 * pow(10, 4)
+  uint64_t const BASE_REWARD_CLAMP_THRESHOLD = ((uint64_t)1000); // pow(10, 3)
   std::string const P2P_REMOTE_DEBUG_TRUSTED_PUB_KEY = "0000000000000000000000000000000000000000000000000000000000000000";
 
   uint64_t const CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 0x1ee8; // fr
