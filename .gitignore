@@ -4,6 +4,7 @@
 /tags
 log/
 /.vscode
+.vscode/
 # vim swap files
 *.swp
 *.swo
