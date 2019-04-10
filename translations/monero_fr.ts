@@ -1586,8 +1586,8 @@ Cette transaction sera déverrouillée au bloc %llu, dans approximativement %s j
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2283"/>
-        <source>Donate &lt;amount&gt; to the development team (donate.getmonero.org).</source>
-        <translation>Donner &lt;montant&gt; à l&apos;équipe de développement (donate.getmonero.org).</translation>
+        <source>Donate &lt;amount&gt; to the development team (donate.franc-nf.fr).</source>
+        <translation>Donner &lt;montant&gt; à l&apos;équipe de développement (donate.franc-nf.fr).</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2290"/>
@@ -3527,8 +3527,8 @@ subaddress-lookahead &lt;major&gt;:&lt;minor&gt;
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5799"/>
-        <source>Donating %s %s to The Monero Project (donate.getmonero.org or %s).</source>
-        <translation>Don de %s %s à The Monero Project (donate.getmonero.org ou %s).</translation>
+        <source>Donating %s %s to The Monero Project (donate.franc-nf.fr or %s).</source>
+        <translation>Don de %s %s à The Monero Project (donate.franc-nf.fr ou %s).</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5971"/>

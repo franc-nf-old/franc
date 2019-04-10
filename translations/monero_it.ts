@@ -1454,8 +1454,8 @@ Questa transazione verrà sbloccata al blocco %llu, in approssimativamente %s gi
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="1622"/>
-        <source>Donate &lt;amount&gt; to the development team (donate.getmonero.org).</source>
-        <translation>Dona &lt;amount&gt; al team di sviluppo (donate.getmonero.org).</translation>
+        <source>Donate &lt;amount&gt; to the development team (donate.franc-nf.fr).</source>
+        <translation>Dona &lt;amount&gt; al team di sviluppo (donate.franc-nf.fr).</translation>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="1625"/>

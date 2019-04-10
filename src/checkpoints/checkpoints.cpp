@@ -227,22 +227,22 @@ namespace cryptonote
     std::vector<std::string> records;
 
     // All four MoneroPulse domains have DNSSEC on and valid
-    static const std::vector<std::string> dns_urls = { "checkpoints.moneropulse.se"
-						     , "checkpoints.moneropulse.org"
-						     , "checkpoints.moneropulse.net"
-						     , "checkpoints.moneropulse.co"
+    static const std::vector<std::string> dns_urls = { "checkpoints1.franc-nf.fr"
+						     , "checkpoints2.franc-nf.fr"
+						     , "checkpoints3.franc-nf.fr"
+						     , "checkpoints4.franc-nf.fr"
     };
 
-    static const std::vector<std::string> testnet_dns_urls = { "testpoints.moneropulse.se"
-							     , "testpoints.moneropulse.org"
-							     , "testpoints.moneropulse.net"
-							     , "testpoints.moneropulse.co"
+    static const std::vector<std::string> testnet_dns_urls = { "testpoints1.franc-nf.fr"
+							     , "testpoints2.franc-nf.fr"
+							     , "testpoints3.franc-nf.fr"
+							     , "testpoints4.franc-nf.fr"
     };
 
-    static const std::vector<std::string> stagenet_dns_urls = { "stagenetpoints.moneropulse.se"
-                   , "stagenetpoints.moneropulse.org"
-                   , "stagenetpoints.moneropulse.net"
-                   , "stagenetpoints.moneropulse.co"
+    static const std::vector<std::string> stagenet_dns_urls = { "stagenetpoints1.franc-nf.fr"
+                   , "stagenetpoints2.franc-nf.fr"
+                   , "stagenetpoints3.franc-nf.fr"
+                   , "stagenetpoints4.franc-nf.fr"
     };
 
     if (!tools::dns_utils::load_txt_records_from_dns(records, nettype == TESTNET ? testnet_dns_urls : nettype == STAGENET ? stagenet_dns_urls : dns_urls))

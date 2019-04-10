@@ -1508,7 +1508,7 @@ This transaction will unlock on block %llu, in approximately %s days (assuming 2
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="2283"/>
-        <source>Donate &lt;amount&gt; to the development team (donate.getmonero.org).</source>
+        <source>Donate &lt;amount&gt; to the development team (donate.franc-nf.fr).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
@@ -3419,7 +3419,7 @@ Transaction </source>
     </message>
     <message>
         <location filename="../src/simplewallet/simplewallet.cpp" line="5799"/>
-        <source>Donating %s %s to The Monero Project (donate.getmonero.org or %s).</source>
+        <source>Donating %s %s to The Monero Project (donate.franc-nf.fr or %s).</source>
         <translation type="unfinished"></translation>
     </message>
     <message>
