@@ -52,7 +52,7 @@
 
 // MONEY_SUPPLY - total number coins to be generated
 #define MONEY_SUPPLY                                    ((uint64_t)(-1))
-#define EMISSION_SPEED_FACTOR_PER_MINUTE                (26)
+#define EMISSION_SPEED_FACTOR_PER_MINUTE                (25)
 #define FINAL_SUBSIDY_PER_MINUTE                        ((uint64_t)300000000000) // 3 * pow(10, 11)
 
 #define CRYPTONOTE_REWARD_BLOCKS_WINDOW                 100
@@ -62,10 +62,10 @@
 #define CRYPTONOTE_LONG_TERM_BLOCK_WEIGHT_WINDOW_SIZE   100000 // size in blocks of the long term block weight median window
 #define CRYPTONOTE_SHORT_TERM_BLOCK_WEIGHT_SURGE_FACTOR 50
 #define CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE          600
-#define CRYPTONOTE_DISPLAY_DECIMAL_POINT                4 // | 12
+#define CRYPTONOTE_DISPLAY_DECIMAL_POINT                5 // | 12
 // COIN - number of smallest units in one coin
-#define COIN                                            ((uint64_t)10000) // pow(10, 12) | 1000000000000
-#define PREMINE_COIN                                    ((uint64_t)20000000000)
+#define COIN                                            ((uint64_t)100000) // pow(10, 12) | 1000000000000
+#define PREMINE_COIN                                    ((uint64_t)20000000 00000)
 
 #define FEE_PER_KB_OLD                                  ((uint64_t)100) // pow(10, 10) | 10000000000
 #define FEE_PER_KB                                      ((uint64_t)20) // 2 * pow(10, 9)
@@ -179,7 +179,7 @@ namespace config
   boost::uuids::uuid const NETWORK_ID = { {
       0x13 ,0x57, 0x14, 0x01 , 0x15, 0x0A , 0x17, 0x07, 0x0B, 0x14, 0x0C, 0x14, 0x0D, 0x14, 0x13, 0x10
     } }; // Bender's nightmare
-  std::string const GENESIS_TX = "013c01ff0001ffffffffffff03029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121017767aafcde9be00dcfd098715ebcf7f410daebc582fda69d24a28e9d0bc890d1";
+  std::string const GENESIS_TX = "013c01ff000131fffffffffff03029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121017767aafcde9be00dcfd098715ebcf7f410daebc582fda69d24a28e9d0bc890d1";
   uint32_t const GENESIS_NONCE = 10000;
 
   namespace testnet
@@ -193,7 +193,7 @@ namespace config
     boost::uuids::uuid const NETWORK_ID = { {
         0x13 ,0x57, 0x14, 0x01 , 0x15, 0x0A , 0x17, 0x07, 0x0B, 0x14, 0x0C, 0x14, 0x0D, 0x14, 0x13, 0x11
       } }; // Bender's daydream
-    std::string const GENESIS_TX = "013c01ff0001ffffffffffff03029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121017767aafcde9be00dcfd098715ebcf7f410daebc582fda69d24a28e9d0bc890d1";
+    std::string const GENESIS_TX = "013c01ff000131fffffffffff03029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121017767aafcde9be00dcfd098715ebcf7f410daebc582fda69d24a28e9d0bc890d1";
     uint32_t const GENESIS_NONCE = 10001;
   }
 
@@ -208,7 +208,7 @@ namespace config
     boost::uuids::uuid const NETWORK_ID = { {
         0x13 ,0x57, 0x14, 0x01 , 0x15, 0x0A , 0x17, 0x07, 0x0B, 0x14, 0x0C, 0x14, 0x0D, 0x14, 0x13, 0x12
       } }; // Bender's daydream
-    std::string const GENESIS_TX = "013c01ff0001ffffffffffff0302df5d56da0c7d643ddd1ce61901c7bdc5fb1738bfe39fbe69c28a3a7032729c0f2101168d0c4ca86fb55a4cf6a36d31431be1c53a3bd7411bb24e8832410289fa6f3b";
+    std::string const GENESIS_TX = "013c01ff000131fffffffffff03029b2e4c0281c0b02e7c53291a94d1d0cbff8883f8024f5142ee494ffbbd08807121017767aafcde9be00dcfd098715ebcf7f410daebc582fda69d24a28e9d0bc890d1";
     uint32_t const GENESIS_NONCE = 10002;
   }
 }
