@@ -64,10 +64,10 @@
 #define CRYPTONOTE_COINBASE_BLOB_RESERVED_SIZE          600
 #define CRYPTONOTE_DISPLAY_DECIMAL_POINT                5 // | 12
 // COIN - number of smallest units in one coin
-#define COIN                                            ((uint64_t)100000) // pow(10, 12) | 1000000000000
-#define PREMINE_COIN                                    ((uint64_t)20000000 00000)
+#define COIN                                            ((uint64_t)100000) // pow(10, 12) 
+#define PREMINE_COIN                                    ((uint64_t)200000000000)
 
-#define FEE_PER_KB_OLD                                  ((uint64_t)100) // pow(10, 10) | 10000000000
+#define FEE_PER_KB_OLD                                  ((uint64_t)100) // pow(10, 10) 
 #define FEE_PER_KB                                      ((uint64_t)20) // 2 * pow(10, 9)
 #define FEE_PER_BYTE                                    ((uint64_t)3)
 #define DYNAMIC_FEE_PER_KB_BASE_FEE                     ((uint64_t)20) // 2 * pow(10,9)
