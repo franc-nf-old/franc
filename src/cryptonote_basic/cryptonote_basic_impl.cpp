@@ -93,10 +93,10 @@ namespace cryptonote {
     const int emission_speed_factor = EMISSION_SPEED_FACTOR_PER_MINUTE - (target_minutes-1);
 
     /**********************************PREMINE Settings**************************************/
-    if (median_weight > 0 && already_generated_coins < PREMINE_COIN) {
+    /*if (median_weight > 0 && already_generated_coins < PREMINE_COIN) {
       reward = PREMINE_COIN;
       return true;
-    }
+    }*/
     /****************************************************************************************/
 
 
