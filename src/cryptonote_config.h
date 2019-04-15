@@ -65,7 +65,7 @@
 #define CRYPTONOTE_DISPLAY_DECIMAL_POINT                5 // | 12
 // COIN - number of smallest units in one coin
 #define COIN                                            ((uint64_t)100000) // pow(10, 12) 
-#define GENESIS_BLOCK_REWARD                            ((uint64_t)200000000000)
+#define GENESIS_BLOCK_REWARD                            ((uint64_t)2000000000000000000)// 1% for dev and 99% for charity's project ;-)
 
 #define FEE_PER_KB_OLD                                  ((uint64_t)100) // pow(10, 10) 
 #define FEE_PER_KB                                      ((uint64_t)20) // 2 * pow(10, 9)
