@@ -68,7 +68,7 @@
 #define GENESIS_BLOCK_REWARD                            ((uint64_t)1000000000000000000)// 2% for dev and 98% for charity's project ;-)
 
 
-#define FEE_PER_KB_OLD                                  ((uint64_t)10000) // pow(10, 10)
+#define FEE_PER_KB_OLD                                  ((uint64_t)10000) // pow(10, 10)10000000000
 #define FEE_PER_KB                                      ((uint64_t)2000) // 2 * pow(10, 9)
 #define FEE_PER_BYTE                                    ((uint64_t)3)
 #define DYNAMIC_FEE_PER_KB_BASE_FEE                     ((uint64_t)2000) // 2 * pow(10,9)
@@ -149,7 +149,7 @@
 #define HF_VERSION_SMALLER_BP                   10
 #define HF_VERSION_LONG_TERM_BLOCK_WEIGHT       10
 
-#define PER_KB_FEE_QUANTIZATION_DECIMALS        8
+#define PER_KB_FEE_QUANTIZATION_DECIMALS        5
 
 #define HASH_OF_HASHES_STEP                     256
 
@@ -167,8 +167,8 @@ namespace config
 {
   uint64_t const DEFAULT_FEE_ATOMIC_XMR_PER_KB = 500; // Just a placeholder!  Change me!
   uint8_t const FEE_CALCULATION_MAX_RETRIES = 10;
-  uint64_t const DEFAULT_DUST_THRESHOLD = ((uint64_t)2000000000); // 2 * pow(10, 9)
-  uint64_t const BASE_REWARD_CLAMP_THRESHOLD = ((uint64_t)100000000); // pow(10, 8)
+  uint64_t const DEFAULT_DUST_THRESHOLD = ((uint64_t)2000); // 2 * pow(10, 9)
+  uint64_t const BASE_REWARD_CLAMP_THRESHOLD = ((uint64_t)100); // pow(10, 8)
   std::string const P2P_REMOTE_DEBUG_TRUSTED_PUB_KEY = "0000000000000000000000000000000000000000000000000000000000000000";
 
   uint64_t const CRYPTONOTE_PUBLIC_ADDRESS_BASE58_PREFIX = 0x1ee8; // fr
