@@ -15,7 +15,7 @@ print("maybe someone smart can replace the sed with perl..")
 a = ""
 
 license = textwrap.dedent("""\
-    // Copyright (c) 2014-2018, The Monero Project
+    // Copyright (c) 2014-2019, The Monero Project
     // 
     // All rights reserved.
     // 
@@ -123,7 +123,7 @@ ge_comments = textwrap.dedent("""\
 xmr_comments = textwrap.dedent("""\
     /*
      *
-     * xmr specific code
+     * oa1:fr specific code
      *
      *
     This code is from the original CryptoNote.
@@ -180,7 +180,7 @@ if a == "m":
     #so you don't get multiple "loads"
     os.system("tail -n +24 sc_reduce.c > sc.monero._reduce.c") #also good on linux
     os.system("tail -n +24 sc_muladd.c > sc.monero._muladd.c")
-    os.system("tail -n +31 sc_sub.xmr.c > sc.monero._sub.xmr.c") #careful with the tails if you change these files!
+    os.system("tail -n +31 sc_sub.oa1:fr.c > sc.monero._sub.oa1:fr.c") #careful with the tails if you change these files!
     os.system("cat sc.monero.*.c | grep -v '^#include' > sc.monero.c")
 
     #ge stuff
@@ -223,9 +223,9 @@ if a == "m":
             text_file.write(ge_comments)
     with open("sc.monero.comments", "w") as text_file:
             text_file.write(sc_comments)
-    with open("xmr.monero.comments", "w") as text_file:
+    with open("oa1:fr.monero.comments", "w") as text_file:
             text_file.write(xmr_comments)
-    with open("xmr.monero.predeclarations", "w") as text_file:
+    with open("oa1:fr.monero.predeclarations", "w") as text_file:
             text_file.write(predeclarations)
 
 
@@ -238,7 +238,7 @@ if a == "m":
         text_file.write(crypto_ops_includes)
 
     #note you may have duplicates of load_3, load_4 and possibly some other functions ... 
-    os.system("cat monero.license crypto-ops.monero.includes xmr.monero.predeclarations fe.monero.comments fe.monero.c sc.monero.comments sc.monero.c ge.monero.comments ge.monero.c xmr.monero.comments xmrSpecificOld.c > crypto-ops.c")
+    os.system("cat monero.license crypto-ops.monero.includes oa1:fr.monero.predeclarations fe.monero.comments fe.monero.c sc.monero.comments sc.monero.c ge.monero.comments ge.monero.c oa1:fr.monero.comments xmrSpecificOld.c > crypto-ops.c")
 
     #monero specific header files
     #print("making crypto-ops-tmp.h")
